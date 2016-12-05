@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">	
+            
+            <!--<form method="post" id="formLogin" onkeypress="return runScriptLogin(event)" enctype="application/x-www-form-urlencoded" >-->
+            <form method="post" id="formLogin" onkeypress="return runScriptLogin(event)" enctype="application/x-www-form-urlencoded" >
+                <div class="header">
+                    <div>Caixa<span>Master</span></div>
+                    <div id="_AJAX_LOGIN_"></div>
+                </div>
+                <br>
+                <div class="login">			
+                    <input type="text" id="user_login" placeholder="Usuário" name="user_login" autofocus="" ><br>
+                    <input type="password" id="pass_login" placeholder="Senha" name="pass_login"><br>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="1" id="session_login" name="session_login" checked >Lembrar</label>
+                </div>                  
+                <!--<input type="submit" class="btoLog" value="Login" >-->
+                <button type="button" class="btn btn-default btn-success btn-block" onclick="goLogin()"><span class="glyphicon glyphicon-certificate"></span></button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<script src="views/app/js/login.js"></script>
