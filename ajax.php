@@ -8,7 +8,15 @@ if ($_POST) {
         case 'login':
             require 'core/bin/ajax/goLogin.php';
         break;
-
+    
+        case 'cad_user':
+            require 'core/bin/ajax/goCadUser.php';
+        break;
+    
+        case 'reg':
+            require 'core/bin/ajax/consult.php';
+        break;    
+    
         default:
             header('location: index.php');
         break;

@@ -3,6 +3,8 @@
 //
 //INICIA A SESSION
 session_start();
+//DEFINE O TIME ZONE
+date_default_timezone_set('America/Sao_Paulo');
 
 #CONSTANTES DE CONEXÃO
 define('DB_HOST', 'localhost');

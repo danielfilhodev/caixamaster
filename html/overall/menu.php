@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.php"><?php APP_TITLE; ?></a>
+    <a class="navbar-brand" href="index.php"><?php echo APP_TITLE; ?></a>
   </div>
   <div class="collapse navbar-collapse" id="bar1">
     <ul class="nav navbar-nav ">
@@ -14,7 +14,7 @@
         if ( $_SESSION['app_id'] == true ) {
         //Mostra no menu a opção de USUARIOS 
       ?>
-        <li><a href="?view=cadastro_usuario">Cadastro Usuário</a></li>
+        <li><a href="?view=cadUser">Cadastro Usuário</a></li>
       <?php }//fecha if ?>
         <li><a href="?view=cad_pedido">Novo Pedido</a></li>
         <?php
