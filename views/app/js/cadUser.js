@@ -1,5 +1,5 @@
 function goCadUser(){
-    var connect, form, response, result, txt, msg_cad, name_user, user, email, pass, tp_user, status;
+    var connect, form, response, result, txt, msg_cad, name_user, user, email, pass, tp_user, status, msg_ok;
     name_user   = pegaid('name_user_reg').value;
     user        = pegaid('user_reg').value;
     email       = pegaid('email_reg').value;
@@ -33,6 +33,12 @@ function goCadUser(){
                         pegaid('_AJAX_REG_').innerHTML = result;
                         //recarrega a pagina
                         location.reload();
+                        msg_ok = '<div class="alert alert-dismissible alert-success">';
+                        msg_ok += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+                        msg_ok += '<h4>Registro OK!</h4>';
+                        msg_ok += '<p>:)</p>';
+                        msg_ok += '</div>';                        
+                        pegaid('_AJAX_REG_').innerHTML = msg_ok;
                     } 
                     else {
                         // nao logado

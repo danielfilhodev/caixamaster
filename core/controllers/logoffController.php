@@ -1,9 +1,4 @@
 <?php
 
-if(isset($_SESSION['user_id'])){
-    
-    session_destroy();
-
-    header ('location: core/controllers/indexController.php');
-    
-}
+unset($_SESSION['app_id']);
+header ('location: ?view=index');

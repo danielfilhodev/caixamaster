@@ -14,7 +14,8 @@ $status = $db->real_escape_string( $_POST['status']);
         //$dados = $db->selectArr($sql)[0];
         $log = "Responsável pelo cadastro<br> Nome: ". $users[$_SESSION['app_id']]['nome']. "<br> Usuário: ". $users[$_SESSION['app_id']]['user'] . "<br> Email: ". $users[$_SESSION['app_id']]['email'] . "<br> Data: ". date('d/m/Y - H:i:s') . "<br> IP :". $_SERVER['REMOTE_ADDR'];
         $dtCad = date('Y-m-d');    
-        $sql = $db->query("INSERT INTO usuarios (user, user_email, user_name, user_password, user_permissao, user_dt_cad, status, log) VALUE ('$user','$email','$name_user','$hash','$tp_user','$dtCad','$log', '$status')");
+        $sql = $db->query("INSERT INTO usuarios (user, user_email, user_name, user_password, user_permissao, user_dt_cad, log, status) "
+                . "                       VALUE ('$user','$email','$name_user','$hash','$tp_user','$dtCad','$log', '$status')");
         $html = 1;
         //$db->reset($sql);
     } else {   
